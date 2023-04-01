@@ -13,6 +13,11 @@ export default function Experience() {
   const groupRef = useRef<THREE.Group>(null);
 
   useFrame((state, delta) => {
+    // const angle = state.clock.elapsedTime;
+    // state.camera.position.x = Math.sin(angle) * 8;
+    // state.camera.position.z = Math.cos(angle) * 8;
+    // state.camera.lookAt(0, 0, 0);
+
     if (cubeRef.current) {
       cubeRef.current.rotation.y += delta;
     }
