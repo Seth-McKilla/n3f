@@ -1,14 +1,13 @@
 import { Canvas } from "@react-three/fiber";
+
+import Experience from "@/components/Experience";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.main}>
       <Canvas>
-        <mesh>
-          <torusKnotGeometry />
-          <meshNormalMaterial />
-        </mesh>
+        <Experience />
       </Canvas>
     </div>
   );
