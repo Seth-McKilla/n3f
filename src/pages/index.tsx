@@ -1,3 +1,15 @@
+import { Canvas } from "@react-three/fiber";
+import styles from "@/styles/Home.module.css";
+
 export default function Home() {
-  return <>Soon to be a badass R3F application</>;
+  return (
+    <div className={styles.main}>
+      <Canvas>
+        <mesh>
+          <torusKnotGeometry />
+          <meshNormalMaterial />
+        </mesh>
+      </Canvas>
+    </div>
+  );
 }
